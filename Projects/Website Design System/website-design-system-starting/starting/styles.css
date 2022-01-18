@@ -1,0 +1,199 @@
+html {
+    padding: 0 80px;
+    font-family: Georgia;
+    background-color: #8ab2b9;
+}
+
+.title {
+    padding: 5px 15px;
+}
+
+.container {
+    border: 3px solid rgb(141, 136, 136);
+    padding: 10px;
+    margin-bottom: 6px;
+    background-color: white;
+}
+
+/* Colors */
+
+.color-panel {
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    margin: 6px 15px;
+    width: 150px;
+    height: 100px;
+}
+
+#_361999 {
+    background-color: #361999;
+    color: white;
+}
+
+#_78FFF1 {
+    background-color: #78FFF1;
+}
+
+#_FF6495 {
+    background-color: #FF6495;
+}
+
+#_162B32 {
+    background-color: #162B32;
+    color: white;
+}
+
+#_FF4838 {
+    background-color: #FF4838;
+}
+
+#_490B3D {
+    background-color: #490B3D;
+    color: white;
+}
+
+#_BD1E51 {
+    background-color: #BD1E51;
+}
+
+#_F1B814 {
+    background-color: #F1B814;
+}
+
+#_1A2238 {
+    background-color: #1A2238;
+    color: white;
+}
+
+#_9DAAF2 {
+    background-color: #9DAAF2;
+}
+
+#_FF6A3D {
+    background-color: #FF6A3D;
+}
+
+#_F4DB7D {
+    background-color: #F4DB7D;
+}
+
+#_371BB1 {
+    background-color: #371BB1;
+    color: white;
+}
+
+#_05F4B7 {
+    background-color: #05F4B7;
+}
+
+#_12151F {
+    background-color: #12151F;
+    color: white;
+}
+
+#_1FC58E {
+    background-color: #1FC58E;
+}
+
+#_FAE62D {
+    background-color: #FAE62D;
+}
+
+#_191414 {
+    background-color: #191414;
+    color: white;
+}
+
+#_F7F7F7 {
+    background-color: #F7F7F7;
+}
+
+#_7DA2A9 {
+    background-color: #7DA2A9;
+}
+
+#_8DA242 {
+    background-color: #8DA242;
+}
+
+/* fonts */
+
+.font {
+    display: inline-block;
+    margin: 0 50px 6px 15px;
+}
+
+.font-label {
+    text-decoration: underline;
+}
+
+.roboto {
+    font-family: Roboto, sans-serif;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.nunito {
+    font-family: Nunito, sans-serif;
+}
+
+.lora {
+    font-family: Lora, serif;
+}
+
+.raleway {
+    font-family: Raleway, sans-serif;
+}
+
+.barlow {
+    font-family: Barlow, sans-serif;
+}
+
+.merriweather {
+    font-family: Merriweather, serif;
+}
+
+.playfair-display {
+    font-family: "Playfair Displaya", serif;
+}
+
+.noto-serif {
+    font-family: "Noto Serif", serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Text Styles */
+
+.text-styles {
+    margin-bottom: 6px;
+    margin-left: 15px;
+}
+
+.main-heading {
+    font-weight: 700;
+    font-family: "Noto Serif", serif;
+}
+
+.subheading {
+    font-weight: 500;
+    font-family: Merriweather, serif
+}
+
+.paragraph {
+    font-weight: 400;
+    font-family: Merriweather;
+}
+
+li {
+    line-height: 2;
+}

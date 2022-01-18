@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Merriweather&family=Pushster&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+        <title>Josh Dias</title>
+    </head>
+    <body>
+        <header class="header">
+            <h3 class="name">Josh Dias</h3>
+            <div class="logo">
+                <img src="logo 2.png" alt="logo">
+            </div>
+        </header>
+        <main>
+            <div class="bio-container">
+                <div class="bio-fixed"></div>
+                <div class="bio-section">
+                    <div class="quote-banner">
+                        <p>"Mathematics is the language with which God has written the universe."<br>&emsp;<span class="galileo">- Galileo Galilei</span></p>
+                    </div>
+                    <p class="bio">My name is <span class="bio-name">Josh Dias</span>, born on December 14, 1995. In 2020, I graduated with a Bachelor's of Science in Mathematics 
+                        from Corban University in Salem, Oregon. After graduating, I decided to go in the direction of Web Developing and 
+                        have been pursuing online courses in both front-end and back-end languages. I am interested in finding a job where 
+                        I might be given the opportunity to expand my skillset.</p>
+                </div>
+            </div>
+            <div class="container projects-flex">
+                <h2>Projects</h2>
+                <ul class="projects">
+                    <li id="project1">⯈ Website Design System</li>
+                    <p id="project-description1">&emsp;<a href="Projects/Website Design System/website-design-system-starting/starting/index.html" target="_blank">This</a> project was fairly basic. 
+                        I used HTML and CSS to create a webpage that displays various colors with their hex and rgb values, fonts with their font-styles, and text style examples for the p, h1, and h2 elements.</p>
+                    <li id="project2">⯈ Tea Cozy</li>
+                    <p id="project-description2">&emsp;<a href="Projects/Tea Cozy - Flexbot/index.html" target="_blank">This</a> is another project where only HTML and CSS were used. With this one, however, 
+                        I began with the design spec below and used flexbox in its design.<br><br><img src="Projects/Tea Cozy - Flexbot/img-tea-cozy-redline.webp" alt="Tea Cozy design spec" width="100%"></p>
+                    <li id="project3">⯈ Credit Card Checker</li>
+                    <p id="project-description3">&emsp;This is a small project I completed in Javascript. In the code below, the <span class="code">validateCred()</span> function takes an array storing a credit card number as input and uses the criteria for credit 
+                        card validation to determine whether or not it is valid, which then outputs a boolean. The <span class="code">findInvalidCards()</span> function iterates through a nested array of credit card numbers and uses the validateCred function to push those 
+                        that are invalid into a new nested array that is then returned.<br><br><img src="Projects/Credit Card Checker/credit card checker.png" alt="Credit Card Checker Code" width="100%"></p>
+                    <li id="project4">⯈ Mysterious Organism</li>
+                    <p id="project-description4">&emsp;The context of this project is that a fictional new organism has been found at the bottom of the ocean near hydrothermal vents and was named Pila 
+                        aequor. In the code below, the <span class="code">returnRandBase()</span> function returns a random DNA base of Adenine, Thymine, Cytosine, and Guanine. Since the organism is comprised of only 15 DNA bases, the 
+                        function <span class="code">mockUpStrand()</span> generates an array containing 15 bases. The factory function <span class="code">pAequorFactory()</span> takes in two inputs, a number that must be unique to each organism and an array genarated 
+                        by <span class="code">mockUpStrand()</span>. The <span class="code">.mutate()</span> method changes a DNA base in the array as a way to simulate the Pila aequor's high rate of mutation. The <span class="code">.compareDNA()</span> method takes one 
+                        pAequorObject as an input and calculates the percentage of <span class="code">.dna</span> that it shares in common with the current pAequor. These organisms are more likely to survive if their DNA is made up 
+                        of at least 60% <span class="code">'C'</span> or <span class="code">'G'</span> bases, so the <span class="code">.willLikelySurvive()</span> method returns a boolean based on whether or not this is true. The <span class="code">.complementStrand()</span> method simply finds the 
+                        complement of the P. Aequor's DNA strand by matching <span class="code">'A'</span>s with <span class="code">'T'</span>s and <span class="code">'C'</span>s with <span class="code">'G'</span>s. Finally, the <span class="code">arrayOfSurvivors()</span> function continues to generate new DNA strands until 30 
+                        likely survivors are added to a new array that is returned.<br><br><img src="Projects/Mysterious Organism/mystery organism code.png" alt="Mysterious Organism Code" width="100%PP"></p>
+                    <li id="project5">⯈ Django Delights</li>
+                    <p id="project-description5">&emsp;<a href="https://django-delights.herokuapp.com/" target="_blank">This</a> website is my largest project which was created using Python's django 
+                        framework. The design is fairly simple because my focus was primarily on the functionality, which is to allow a restaurant owner to keep track of inventory stock, as well as 
+                        expenses, revenue, and profit as purchases are being made. Until you register for an account, there isn't much on the homepage. Once you register and are logged in, you will have 
+                        access to the models. As each page allows, you can then add, update, or delete items. On the inventory page you can add items, unit price, and stock. You can add menu 
+                        items and their prices on the menu page as well as update the recipes for each item. When a customer makes a purchase, it can be recorded on the purchase page. The inventory 
+                        items used in the recipe will then be subtracted from their stock on the inventory page. Finally, the report page tracks the revenue from the purchases model, the expenses from the inventory model, and subtracts the 
+                        two to show your total profit.</p>
+                </ul>
+            </div>
+            <div class=" skills container">
+                <h2>Skills</h2>
+                <div class="flex-container">
+                    <div class="icon-grid">
+                        <div class="html">
+                            <h3>HTML</h3>
+                            <img src="icons/html.png" alt="html logo">
+                        </div>
+                        <div class="css">
+                            <h3>CSS</h3>
+                            <img src="icons/css.png" alt="css logo">
+                        </div>
+                        <div class="javascript">
+                            <h3>Javascript</h3>
+                            <img src="icons/javascript.png" alt="javascript logo">
+                            <p>(Vue.js)</p>
+                        </div>
+                        <div class="python">
+                            <h3>Python</h3>
+                            <img src="icons/python.png" alt="python logo">
+                            <p>(Django)</p>
+                        </div>
+                        <img src="icons/mysql.png" alt="mysql logo" class="mysql">
+                    </div>
+                </div>
+            </div>
+            <div class="container flex-container">
+                <div class="contact-grid">
+                    <h2>Contact</h2>
+                    <div class="contact-form">
+                        <form methd="post" action="index.php">
+                            <input type="text" id="name" placeholder="Name" name="name" required>
+                            <input type="text" id="email" placeholder="Email" name="email" required>
+                            <textarea id="message" name="message" placeholder="Message" name="message" required></textarea>
+                            <input type="submit" value="Send" class="submit" name="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -12,12 +12,12 @@
     $subject = "";
     $body "";
 
-    function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    };
+    // function test_input($data) {
+    //     $data = trim($data);
+    //     $data = stripslashes($data);
+    //     $data = htmlspecialchars($data);
+    //     return $data;
+    // };
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["name"])) {

@@ -1,5 +1,6 @@
 <?php
-echo "hello"
+    include_once("home.html");
+    
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];

@@ -5,7 +5,7 @@
     $nameErr = "";
     $emailErr = "";
     $messageErr = "";
-    // $name = "";
+    $name = "";
     // $email = "";
     // $message = "";
     // $to = "";

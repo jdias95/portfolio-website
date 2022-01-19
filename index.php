@@ -3,7 +3,7 @@
     echo htmlspecialchars($_SERVER["PHP_SELF"]);
 
     $nameErr = "";
-    // $emailErr = "";
+    $emailErr = "";
     // $messageErr = "";
     // $name = "";
     // $email = "";

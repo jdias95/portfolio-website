@@ -2,15 +2,22 @@
     include_once("home.html");
     echo htmlspecialchars($_SERVER["PHP_SELF"]);
 
-    $nameErr = $emailErr = $messageErr = "";
-    $name = $email = $message = $to = $subject = $body "";
+    $nameErr = "";
+    $emailErr = "";
+    $messageErr = "";
+    $name = "";
+    $email = "";
+    $message = "";
+    $to = "";
+    $subject = "";
+    $body "";
 
     // function test_input($data) {
     //     $data = trim($data);
     //     $data = stripslashes($data);
     //     $data = htmlspecialchars($data);
     //     return $data;
-    // }
+    // };
 
     // if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //     if (empty($_POST["name"])) {
@@ -19,8 +26,8 @@
     //             $name = test_input($_POST["name"]);
     //             if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
     //                 $nameErr = "Only letters and white space allowed";
-    //             }
-    //     }
+    //             };
+    //     };
         
     //     if (empty($_POST["email"])) {
     //             $emailErr = "Email is required";
@@ -28,19 +35,19 @@
     //             $email = test_input($_POST["email"]);
     //             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     //                 $emailErr = "Invalid email format";
-    //             }
-    //     }
+    //             };
+    //     };
         
     //     if (empty($_POST["message"])) {
     //             $messageErr = "Message is required";
     //         } else {
     //             $message = test_input($_POST["message"]);
-    //     }
+    //     };
     //     $to = 'dias.joshua7@yahoo.com';
     //     $subject = 'New Form Submission';
     //     $body = "From: $name\n E-Mail: $email\n Message:\n $message";
     //     mail ($to, $subject, $body)
-    // }
+    // };
     // $name = $_POST['name'];
     // $email = $_POST['email'];
     // $message = $_POST['message'];

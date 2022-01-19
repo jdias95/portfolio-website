@@ -6,8 +6,8 @@
     $emailErr = "";
     $messageErr = "";
     $name = "";
-    // $email = "";
-    // $message = "";
+    $email = "";
+    $message = "";
     // $to = "";
     // $subject = "";
     // $body "";

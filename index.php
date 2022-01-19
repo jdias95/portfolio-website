@@ -1,6 +1,6 @@
 <?php
     include_once("home.html");
-    // echo htmlspecialchars($_SERVER["PHP_SELF"]);
+    echo htmlspecialchars($_SERVER["PHP_SELF"]);
 
     // $nameErr = $emailErr = $messageErr = "";
     // $name = $email = $message = $to = $subject = $body "";

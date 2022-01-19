@@ -4,7 +4,7 @@
 
     $nameErr = "";
     $emailErr = "";
-    // $messageErr = "";
+    $messageErr = "";
     // $name = "";
     // $email = "";
     // $message = "";

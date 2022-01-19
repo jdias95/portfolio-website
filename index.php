@@ -8,9 +8,9 @@
     $name = "";
     $email = "";
     $message = "";
-    // $to = "";
-    // $subject = "";
-    // $body "";
+    $to = "";
+    $subject = "";
+    $body "";
 
     // function test_input($data) {
     //     $data = trim($data);

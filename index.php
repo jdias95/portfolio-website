@@ -5,6 +5,13 @@
     $nameErr = $emailErr = $messageErr = "";
     $name = $email = $message = $to = $subject = $body "";
 
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["name"])) {
                 $nameErr = "Name is required";
@@ -33,13 +40,6 @@
         $subject = 'New Form Submission';
         $body = "From: $name\n E-Mail: $email\n Message:\n $message";
         mail ($to, $subject, $body)
-    }
-
-    function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
     }
     // $name = $_POST['name'];
     // $email = $_POST['email'];

@@ -1,5 +1,5 @@
 <?php
-    echo "Hello"
+    echo "Hello";
     include_once("home.html");
     // echo htmlspecialchars($_SERVER["PHP_SELF"]);
 

@@ -1,10 +1,10 @@
 <?php
-    echo "Hello";
-    include_once("home.html");
+    
     // echo htmlspecialchars($_SERVER["PHP_SELF"]);
 
-    // $nameErr = $emailErr = $messageErr = $name = $email = $message = $to = $subject = $body "hello";
-    
+    $nameErr = $emailErr = $messageErr = $name = $email = $message = $to = $subject = $body "hello";
+    echo $name;
+    include_once("home.html");
 
     // function test_input($data) {
     //     $data = trim($data);

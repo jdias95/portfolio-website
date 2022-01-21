@@ -3,6 +3,7 @@
 
     // $nameErr = $emailErr = $messageErr = $name = $email = $message = $to = $subject = $body "hello";
     echo "Hello"
+    include_once("home.html");
 
     // function test_input($data) {
     //     $data = trim($data);
@@ -56,5 +57,4 @@
     //         echo '<p>Something went wrong, go back and try again!</p>'; 
     //     }
     // }
-    include_once("home.html");
 ?>

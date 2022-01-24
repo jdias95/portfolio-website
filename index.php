@@ -3,28 +3,42 @@
     // echo htmlspecialchars($_SERVER["PHP_SELF"]);
 
     // $nameErr = $emailErr = $messageErr = $name = $email = $message = $to = $subject = $body = "";
+    include_once("home.html");
+
     require 'vendor/autoload.php';
     class SendEmail {
-        public static function SendMail($to, $subject, $content) {
+        public static function SendMail($from, $subject, $content) {
             $key = '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';
 
             $email = new \Sendgrid\Mail\Mail();
-            $email->setFrom('Website');
+            $email->setFrom($from, 'Website');
             $email->setSubject($subject);
-            $email->addto($to);
+            $email->addto('dias.joshua7@yahoo.com');
             $email->addContent('text/plain', $content);
 
             $sendgrid = new \SendGrid($key);
 
             try {
                 $response = $sendgrid->send($email);
+                return $response;
             } catch(Exception $e) {
                 echo 'Email exception caught : '. $e->getMessage() ."\n";
                 return false;
             }
         }
     }
-    include_once("home.html");
+
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $subject = 'New Form Submission';
+
+        if ($name && $email && $message) {
+            SendEmail::SendMail($email, $subject, $message);
+        }
+    }
+    
 
     // function test_input($data) {
     //     $data = trim($data);

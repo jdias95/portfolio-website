@@ -3,6 +3,27 @@
     // echo htmlspecialchars($_SERVER["PHP_SELF"]);
 
     // $nameErr = $emailErr = $messageErr = $name = $email = $message = $to = $subject = $body = "";
+    require 'vendor/autoload.php';
+    class SendEmail {
+        public static function SendMail($to, $subject, $content) {
+            $key = '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';
+
+            $email = new \Sendgrid\Mail\Mail();
+            $email->setFrom('Website');
+            $email->setSubject($subject);
+            $email->addto($to);
+            $email->addContent('text/plain', $content);
+
+            $sendgrid = new \SendGrid($key);
+
+            try {
+                $response = $sendgrid->send($email);
+            } catch(Exception $e) {
+                echo 'Email exception caught : '. $e->getMessage() ."\n";
+                return false;
+            }
+        }
+    }
     include_once("home.html");
 
     // function test_input($data) {
@@ -44,25 +65,25 @@
     //     mail($to, $subject, $body);
     // };
     
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $to = 'dias.joshua7@yahoo.com'; 
-    $subject = 'New Form Submission';
+    // $name = $_POST['name'];
+    // $email = $_POST['email'];
+    // $message = $_POST['message'];
+    // $to = 'dias.joshua7@yahoo.com'; 
+    // $subject = 'New Form Submission';
 
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+    // $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
-    if ($_POST['submit']) {
-        echo $name;
-        echo $email;
-        echo $message;
-        echo $to;
-        echo $subject;
-        if ($name && $email && $message) { 
-            mail($to, $subject, $body);
-            echo '<p>Your message has been sent!</p>';
-        } else { 
-            echo '<p>Something went wrong, go back and try again!</p>'; 
-        };
-    };
+    // if ($_POST['submit']) {
+    //     echo $name;
+    //     echo $email;
+    //     echo $message;
+    //     echo $to;
+    //     echo $subject;
+    //     if ($name && $email && $message) { 
+    //         mail($to, $subject, $body);
+    //         echo '<p>Your message has been sent!</p>';
+    //     } else { 
+    //         echo '<p>Something went wrong, go back and try again!</p>'; 
+    //     };
+    // };
 ?>

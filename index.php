@@ -58,7 +58,8 @@
         echo $message;
         echo $to;
         echo $subject;
-        if (@mail($to, $subject, $body)) { 
+        if ($name && $email && $message) { 
+            mail($to, $subject, $body);
             echo '<p>Your message has been sent!</p>';
         } else { 
             echo '<p>Something went wrong, go back and try again!</p>'; 

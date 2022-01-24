@@ -54,6 +54,10 @@
 
     if ($_POST['submit']) {
         echo $name;
+        echo $email;
+        echo $message;
+        echo $to;
+        echo $subject;
         if (@mail($to, $subject, $body)) { 
             echo '<p>Your message has been sent!</p>';
         } else { 

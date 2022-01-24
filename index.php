@@ -10,10 +10,10 @@
         public static function SendMail($from, $subject, $content) {
             $key = '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';
 
-            $email = new \Sendgrid\Mail\Mail();
+            $email = new \SendGrid\Mail\Mail();
             $email->setFrom($from, 'Website');
             $email->setSubject($subject);
-            $email->addto('dias.joshua7@yahoo.com');
+            $email->addTo('dias.joshua7@yahoo.com');
             $email->addContent('text/plain', $content);
 
             $sendgrid = new \SendGrid($key);

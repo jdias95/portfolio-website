@@ -32,15 +32,15 @@
         //     };
         // };
         
-        // if (empty($_POST["message"])) {
-        //     $messageErr = "Message is required";
-        // } else {
-        //     $message = test_input($_POST["message"]);
-        // };
-        // $to = 'dias.joshua7@yahoo.com';
-        // $subject = 'New Form Submission';
-        // $body = "From: $name\n E-Mail: $email\n Message:\n $message";
-        // mail ($to, $subject, $body)
+        if (empty($_POST["message"])) {
+            $messageErr = "Message is required";
+        } else {
+            $message = test_input($_POST["message"]);
+        };
+        $to = 'dias.joshua7@yahoo.com';
+        $subject = 'New Form Submission';
+        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+        mail ($to, $subject, $body)
     };
     
     // $name = $_POST['name'];

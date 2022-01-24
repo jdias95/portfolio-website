@@ -14,6 +14,8 @@
     };
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        echo "hello";
+        mail($to, $subject, $body);
         if (empty($_POST["name"])) {
             $nameErr = "Name is required";
         } else {

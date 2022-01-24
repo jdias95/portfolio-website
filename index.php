@@ -41,7 +41,7 @@
         $subject = 'New Form Submission';
         $body = "From: $name\n E-Mail: $email\n Message:\n $message";
         mail ($to, $subject, $body)
-    };
+    }
     
     // $name = $_POST['name'];
     // $email = $_POST['email'];

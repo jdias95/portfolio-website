@@ -35,6 +35,7 @@
         $subject = 'New Form Submission';
 
         if ($name && $email && $message) {
+            echo $name;
             SendEmail::SendMail($email, $subject, $message);
         }
     }

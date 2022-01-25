@@ -74,7 +74,6 @@
                         <div class="javascript">
                             <h3>Javascript</h3>
                             <img src="icons/javascript.png" alt="javascript logo">
-                            <p>(Vue.js)</p>
                         </div>
                         <div class="python">
                             <h3>Python</h3>
@@ -90,12 +89,9 @@
                     <h2>Contact</h2>
                     <div class="contact-form">
                         <form method="POST" action="index.php">
-                            <input type="text" id="name" placeholder="Name" name="name" value="<?php echo $name;?>" required>
-                            <span class="error"><?php echo $nameErr;?></span>
-                            <input type="text" id="email" placeholder="Email" name="email" value="<?php echo $email;?>" required>
-                            <span class="error"><?php echo $emailErr;?></span>
-                            <textarea id="message" name="message" placeholder="Message" name="message" value="<?php echo $message;?>" required></textarea>
-                            <span class="error"><?php echo $messageErr;?></span>
+                            <input type="text" id="name" placeholder="Name" name="name" required>
+                            <input type="text" id="email" placeholder="Email" name="email" required>
+                            <textarea id="message" name="message" placeholder="Message" name="message" required></textarea>
                             <input type="submit" value="Send" class="submit" name="submit">
                         </form>
                     </div>

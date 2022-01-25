@@ -5,58 +5,58 @@
     // $nameErr = $emailErr = $messageErr = $name = $email = $message = $to = $subject = $body = "";
     include_once("home.html");
 
-    require 'vendor/autoload.php';
+    // require 'vendor/autoload.php';
 
-    $email = new \SendGrid\Mail\Mail();
-    $email->setFrom("dias.joshua7@yahoo.com", "Josh Dias");
-    $email->setSubject("Test");
-    $email->addTo("dias.joshua7@yahoo.com", "Josh Dias");
-    $email->addContent("text/plain", "testing");
+    // $email = new \SendGrid\Mail\Mail();
+    // $email->setFrom("dias.joshua7@yahoo.com", "Josh Dias");
+    // $email->setSubject("Test");
+    // $email->addTo("dias.joshua7@yahoo.com", "Josh Dias");
+    // $email->addContent("text/plain", "testing");
 
-    $sendgrid = new \SendGrid('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');
+    // $sendgrid = new \SendGrid('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');
 
-    try {
-        $response = $sendgrid->send($email);
-        print $response->statusCode() . "\n";
-        print_r($response->headers());
-        print $response->body() . "\n";
-    } catch (Exception $e) {
-        echo 'Caught exception: ' . $e->getMessage() . "\n";
-    }
-    
-    class SendEmail {
-        public static function SendMail($from, $subject, $content) {
-            $key = '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';
+    // try {
+    //     $response = $sendgrid->send($email);
+    //     print $response->statusCode() . "\n";
+    //     print_r($response->headers());
+    //     print $response->body() . "\n";
+    // } catch (Exception $e) {
+    //     echo 'Caught exception: ' . $e->getMessage() . "\n";
+    // }
 
-            $email = new \SendGrid\Mail\Mail();
-            $email->setFrom($from, 'Website');
-            $email->setSubject($subject);
-            $email->addTo('dias.joshua7@yahoo.com');
-            $email->addContent('text/plain', $content);
+    // class SendEmail {
+    //     public static function SendMail($from, $subject, $content) {
+    //         $key = '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';
 
-            $sendgrid = new \SendGrid($key);
+    //         $email = new \SendGrid\Mail\Mail();
+    //         $email->setFrom($from, 'Website');
+    //         $email->setSubject($subject);
+    //         $email->addTo('dias.joshua7@yahoo.com');
+    //         $email->addContent('text/plain', $content);
 
-            try {
-                $response = $sendgrid->send($email);
-                return $response;
-            } catch(Exception $e) {
-                echo 'Email exception caught : '. $e->getMessage() ."\n";
-                return false;
-            }
-        }
-    }
+    //         $sendgrid = new \SendGrid($key);
 
-    if ($_POST['submit']) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $subject = 'New Form Submission';
+    //         try {
+    //             $response = $sendgrid->send($email);
+    //             return $response;
+    //         } catch(Exception $e) {
+    //             echo 'Email exception caught : '. $e->getMessage() ."\n";
+    //             return false;
+    //         }
+    //     }
+    // }
 
-        if ($name && $email && $message) {
-            echo $name;
-            SendEmail::SendMail($email, $subject, $message);
-        }
-    }
+    // if ($_POST['submit']) {
+    //     $name = $_POST['name'];
+    //     $email = $_POST['email'];
+    //     $message = $_POST['message'];
+    //     $subject = 'New Form Submission';
+
+    //     if ($name && $email && $message) {
+    //         echo $name;
+    //         SendEmail::SendMail($email, $subject, $message);
+    //     }
+    // }
     
 
     // function test_input($data) {
@@ -98,25 +98,24 @@
     //     mail($to, $subject, $body);
     // };
     
-    // $name = $_POST['name'];
-    // $email = $_POST['email'];
-    // $message = $_POST['message'];
-    // $to = 'dias.joshua7@yahoo.com'; 
-    // $subject = 'New Form Submission';
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $to = 'dias.joshua7@yahoo.com'; 
+    $subject = 'New Form Submission';
 
-    // $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
-    // if ($_POST['submit']) {
-    //     echo $name;
-    //     echo $email;
-    //     echo $message;
-    //     echo $to;
-    //     echo $subject;
-    //     if ($name && $email && $message) { 
-    //         mail($to, $subject, $body);
-    //         echo '<p>Your message has been sent!</p>';
-    //     } else { 
-    //         echo '<p>Something went wrong, go back and try again!</p>'; 
-    //     };
-    // };
+    if ($_POST['submit']) {
+        echo $name;
+        echo $email;
+        echo $message;
+        echo $to;
+        echo $subject;
+        if (mail($to, $subject, $body)) {
+            echo '<p>Your message has been sent!</p>';
+        } else { 
+            echo '<p>Something went wrong, go back and try again!</p>'; 
+        };
+    };
 ?>

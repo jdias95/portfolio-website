@@ -6,6 +6,24 @@
     include_once("home.html");
 
     require 'vendor/autoload.php';
+
+    $email = new \SendGrid\Mail\Mail();
+    $email->setFrom("dias.joshua7@yahoo.com", "Josh Dias");
+    $email->setSubject("Test");
+    $email->addTo("dias.joshua7@yahoo.com", "Josh Dias");
+    $email->addContent("text/plain", "testing");
+
+    $sendgrid = new \SendGrid('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');
+
+    try {
+        $response = $sendgrid->send($email);
+        print $response->statusCode() . "\n";
+        print_r($response->headers());
+        print $response->body() . "\n";
+    } catch (Exception $e) {
+        echo 'Caught exception: ' . $e->getMessage() . "\n";
+    }
+    
     class SendEmail {
         public static function SendMail($from, $subject, $content) {
             $key = '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';

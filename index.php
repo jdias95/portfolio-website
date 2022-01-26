@@ -39,9 +39,9 @@
     $mail->Port = "587";
     $mail->username = "dias.joshua7@gmail.com";
     $mail->password = "December141995";
-    $mail->Subject = $subject;
+    $mail->Subject = "test";
     $mail->setFrom("dias.joshua7@yahoo.com");
-    $mail->Body = $body;
+    $mail->Body = "Hello";
     $mail->addAddress("dias.joshua7@gmail.com");
     if ($mail->Send()) {
         echo "Email Sent";

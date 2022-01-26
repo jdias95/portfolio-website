@@ -43,6 +43,7 @@
     $mail->setFrom("dias.joshua7@yahoo.com");
     $mail->Body = "Hello";
     $mail->addAddress("dias.joshua7@gmail.com");
+    echo $mail;
     if ($mail->Send()) {
         echo "Email Sent";
     } else {

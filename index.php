@@ -30,5 +30,23 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
 
+    $mail = new PHPMailer();
 
+    $mail->isSMTP();
+    $mail->Host = "smtp.gmail.com";
+    $mail->SMTPAuth = "true";
+    $mail->SMTPSecure = "tls";
+    $mail->Port = "587";
+    $mail->username = "dias.joshua7@gmail.com";
+    $mail->password = "December141995";
+    $mail->Subject = $subject;
+    $mail->setFrom("dias.joshua7@yahoo.com");
+    $mail->Body = $body;
+    $mail->addAddress("dias.joshua7@gmail.com");
+    if ($mail->Send()) {
+        echo "Email Sent";
+    } else {
+        echo "Error";
+    }
+    $mail->smtpClose();
 ?>

@@ -68,15 +68,15 @@ main {
 .galileo {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    font-size: 32px;
+    font-size: 3.2vmin;
 }
 
 .quote-banner {
     display: inline-block;
     line-height: 1.5;
     position: relative;
-    top: 12rem;
-    font-size: 40px;
+    top: 20%;
+    font-size: 4vmin;
     background: rgba(255, 255, 255, 0.6);
     padding: 1rem 0;
     width: 100vw;
@@ -87,18 +87,70 @@ main {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-    font-size: 24px;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 2.5vmin;
     line-height: 1.5;
     background: rgba(255, 255, 255, 0.6);
     margin: 0;
-    width: 40%;
+    width: 40rem;
     padding: 1rem;
 }
 
 .bio-name {
     font-weight: bold;
+}
+
+@media screen and (max-height: 800px), (max-width: 800px) {
+    .bio {
+        font-size: 20px;
+    }
+
+    .galileo {
+        font-size: 26px;
+    }
+
+    .quote-banner {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-height: 532px) {
+    .bio {
+        position: relative;
+        top: 20%;
+        margin-top: 1rem;
+        font-size: 3.7vmin;
+    }
+
+    .galileo {
+        font-size: 4.9vmin;
+    }
+
+    .quote-banner {
+        font-size: 6vmin;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .bio {
+        width: calc(100vw - 5rem);
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .bio {
+        font-size: 4.3vmin;
+    }
+
+    .galileo {
+        font-size: 5.7vmin;
+    }
+
+    .quote-banner {
+        font-size: 6.5vmin;
+    }
 }
 
 h2 {

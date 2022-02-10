@@ -2,6 +2,18 @@ function element(id) {
     return document.getElementById(id);
 };
 
+const linkdin = element("linkdin-img");
+function hoveredLinkdin() {
+    linkdin.src = "icons/hovered-linkdin.png";
+}
+
+function nonHoveredLinkdin() {
+    linkdin.src = "icons/linkdin.png";
+}
+
+linkdin.addEventListener("mouseover", hoveredLinkdin);
+linkdin.addEventListener("mouseout", nonHoveredLinkdin);
+
 const p1 = document.getElementById("project1");
 const p1_clicked = "⯆" + p1.innerHTML.substring(1);
 const p1_unclicked = "⯈" + p1_clicked.substring(1)

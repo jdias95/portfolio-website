@@ -10,7 +10,7 @@
     $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
     if ($_POST['submit']) {
-        if (strpos($message, 'robot') !== false || strpos($message, 'money') !== false || strpos($message, 'rich') !== false) {
+        if (strpos(strtolower($message), 'http') !== false) {
             echo '';
         } else {
             if (mail($to, $subject, $body)) {

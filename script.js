@@ -2,17 +2,29 @@ function element(id) {
     return document.getElementById(id);
 };
 
-const linkdin = element("linkdin-img");
+const linkedin = element("linkedin-img");
 function hoveredLinkdin() {
-    linkdin.src = "icons/hovered-linkdin.png";
+    linkedin.src = "icons/hovered-linkedin.png";
 }
 
 function nonHoveredLinkdin() {
-    linkdin.src = "icons/linkdin.png";
+    linkedin.src = "icons/linkedin.png";
 }
 
-linkdin.addEventListener("mouseover", hoveredLinkdin);
-linkdin.addEventListener("mouseout", nonHoveredLinkdin);
+linkedin.addEventListener("mouseover", hoveredLinkdin);
+linkedin.addEventListener("mouseout", nonHoveredLinkdin);
+
+const github = element("github-img");
+function hoveredGithub() {
+    github.src = "icons/hovered-github.png";
+}
+
+function nonHoveredGithub() {
+    github.src = "icons/github.png";
+}
+
+github.addEventListener("mouseover", hoveredGithub)
+github.addEventListener("mouseout", nonHoveredGithub)
 
 const p1 = document.getElementById("project1");
 const p1_clicked = "⯆" + p1.innerHTML.substring(1);

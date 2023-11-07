@@ -1,177 +1,285 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Merriweather&family=Pushster&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Merriweather&family=Pushster&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Josh Dias</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <h3 class="name">Josh Dias</h3>
-        <div class="logo">
-            <img src="logo.png" alt="logo">
-        </div>
-        <div class="github">
-            <a href="https://github.com/AkomaMathaino" target="_blank"><img src="icons/github.png" alt="github"
-                    id="github-img"></a>
-        </div>
-        <div class="linkedin">
-            <a href="https://www.linkedin.com/in/joshua-dias-383439231" target="_blank"><img src="icons/linkedin.png"
-                    alt="linkedin" id="linkedin-img"></a>
-        </div>
+      <h3 class="name">Josh Dias</h3>
+      <div class="logo">
+        <img src="logo.png" alt="logo" />
+      </div>
+      <div class="github">
+        <a href="https://github.com/AkomaMathaino" target="_blank"
+          ><img src="icons/github.png" alt="github" id="github-img"
+        /></a>
+      </div>
+      <div class="linkedin">
+        <a
+          href="https://www.linkedin.com/in/joshua-dias-383439231"
+          target="_blank"
+          ><img src="icons/linkedin.png" alt="linkedin" id="linkedin-img"
+        /></a>
+      </div>
     </header>
     <main>
-        <div class="bio-container">
-            <div class="bio-fixed"></div>
-            <div class="bio-section">
-                <div class="quote-banner">
-                    <p>"Mathematics is the language with which God has written the universe."<br>&emsp;<span
-                            class="galileo">- Galileo Galilei</span></p>
-                </div>
-                <p class="bio">My name is <span class='bio-name'>Joshua Dias</span>, and I was born on December 14,
-                    1995.
-                    In 2020, I successfully completed my Bachelor of Science in Mathematics at Corban University in
-                    Salem, Oregon. Inspired by my academic background, I made the decision to venture into the field of
-                    Web Development. Since then, I have been actively engaging in online courses to enhance my
-                    proficiency in both front-end and back-end programming languages. I am currently seeking employment
-                    opportunities that provide a platform for me to contribute to a dynamic team. I am
-                    enthusiastic
-                    about the prospect of utilizing my knowledge and skills in a professional setting.</p>
+      <div class="bio-container">
+        <div class="bio-fixed"></div>
+        <div class="bio-section">
+          <div class="quote-banner">
+            <p>
+              "Mathematics is the language with which God has written the
+              universe."<br />&emsp;<span class="galileo"
+                >- Galileo Galilei</span
+              >
+            </p>
+          </div>
+          <p class="bio">
+            My name is <span class="bio-name">Joshua Dias</span>, and I was born
+            on December 14, 1995. In 2020, I successfully completed my Bachelor
+            of Science in Mathematics at Corban University in Salem, Oregon.
+            Inspired by my academic background, I made the decision to venture
+            into the field of Web Development. Since then, I have been actively
+            engaging in online courses to enhance my proficiency in both
+            front-end and back-end programming languages. I am currently seeking
+            employment opportunities that provide a platform for me to
+            contribute to a dynamic team. I am enthusiastic about the prospect
+            of utilizing my knowledge and skills in a professional setting.
+          </p>
+        </div>
+      </div>
+      <div class="container projects-flex">
+        <h2>Projects</h2>
+        <ul class="projects">
+          <li id="project1">⯈ Website Design System</li>
+          <p id="project-description1">
+            <a
+              href="Projects/Website Design System/website-design-system-starting/starting/index.html"
+              target="_blank"
+              >Website Design System</a
+            ><br /><br />
+            This project showcases a fundamental implementation of HTML and CSS
+            to create a visually appealing webpage. The webpage serves as a
+            platform for displaying a range of colors along with their
+            corresponding hex and RGB values. Additionally, it presents various
+            fonts with their respective font styles, and provides text style
+            examples for the p, h1, and h2 elements.
+          </p>
+          <li id="project2">⯈ Tea Cozy</li>
+          <p id="project-description2">
+            <a href="Projects/Tea Cozy - Flexbot/index.html" target="_blank"
+              >Tea Cozy</a
+            ><br /><br />
+            This project showcases the utilization of HTML and CSS,
+            incorporating the design specification below as the foundation and
+            employing flexbox as a key element in its layout.<br /><br /><img
+              src="Projects/Tea Cozy - Flexbot/img-tea-cozy-redline.webp"
+              alt="Tea Cozy design spec"
+              width="100%"
+            />
+          </p>
+          <li id="project3">⯈ Credit Card Checker</li>
+          <p id="project-description3">
+            <a
+              href="https://github.com/AkomaMathaino/credit_card_checker"
+              target="_blank"
+              >GitHub Repo</a
+            ><br /><br />
+            This project demonstrates my proficiency in JavaScript. The main
+            focus of the project revolves around the
+            <span class="code">validateCred()</span> function, which takes an
+            input array containing credit card numbers and applies the criteria
+            for credit card validation. It accurately determines whether a
+            credit card number is valid or not, and returns a boolean value as
+            output. Additionally, the
+            <span class="code">findInvalidCards()</span> function plays a
+            crucial role by iterating through a nested array of credit card
+            numbers. It utilizes the
+            <span class="code">validateCred()</span> function to identify and
+            extract the invalid credit card numbers, storing them in a new
+            nested array that is subsequently returned.<br /><br /><img
+              src="Projects/Credit Card Checker/credit card checker.png"
+              alt="Credit Card Checker Code"
+              width="100%"
+            />
+          </p>
+          <li id="project4">⯈ Fitness App</li>
+          <p id="project-description4">
+            <a
+              href="https://github.com/AkomaMathaino/FitnessApp"
+              target="_blank"
+              >GitHub Repo
+            </a>
+            <span> | </span>
+            <a href="https://wegojim.net" target="_blank">Website</a>
+            <br /><br />
+            This is a web application developed with a technology stack that
+            includes React for the front-end, Node.js/Express for the
+            server-side, and uses a MySQL database. As a gym rat myself, I
+            created this app to provide a convenient way to track workout
+            progress and stay motivated. Once registering and logging in, you
+            can estimate your calorie intake and expenditure. The dashboard is
+            where most of the content is located. Here, you can update your
+            weight, create and manage personalized workout routines, and track
+            progress for individual exercises. Whether you're a fitness
+            enthusiast or someone looking to start your fitness journey, this
+            app is designed to help you achieve your goals and enjoy the
+            process.
+          </p>
+          <li id="project5">⯈ Card Game</li>
+          <p id="project-description5">
+            <a href="https://github.com/AkomaMathaino/card_game" target="_blank"
+              >GitHub Repo</a
+            ><br /><br />
+            This is a card game implemented in Python and played in the
+            terminal. Each card in the game has three attributes: type, number,
+            and color.<br /><br />
+            Types: Fire, Ice, Water<br />
+            Numbers: 5-12<br />
+            Colors: Red, Green, Yellow, Blue<br /><br />
+            At the beginning of the game, the deck is shuffled and divided
+            equally between the player and the computer. In each round, the
+            player is presented with a selection of three cards to choose from,
+            while the computer also plays a card.<br /><br />
+            <img
+              src="Projects/Card Game/1.png"
+              alt="Card Game Image"
+              width="100%PP"
+            /><br /><br />
+            The comparison process starts by comparing the types of the cards.
+            Fire beats Ice, Ice beats Water, and Water beats Fire. If the types
+            are the same, the numbers on the cards are compared, with the higher
+            number winning. In the case of a tie in both type and number, the
+            round ends without a winner. Each round, the winning card is saved
+            for the winner.<br /><br />
+            <img
+              src="Projects/Card Game/2.png"
+              alt="Card Game Image"
+              width="100%PP"
+            /><br /><br />
+            To win the game, a player must collect a specific set of three
+            cards. The winning set is determined by both the type and color. The
+            player must have either three cards of the same type or one card of
+            each type, with distinct colors.<br /><br />
+            <img
+              src="Projects/Card Game/3.png"
+              alt="Card Game Image"
+              width="100%PP"
+            />
+          </p>
+          <li id="project6">⯈ Django Delights</li>
+          <p id="project-description6">
+            <a
+              href="https://github.com/AkomaMathaino/DjangoDelights"
+              target="_blank"
+              >GitHub Repo
+            </a>
+            <span> | </span>
+            <a href="https://django-delights.herokuapp.com/" target="_blank"
+              >Website</a
+            ><br /><br />
+            This project is an app built using Python's Django framework. While
+            the design maintains simplicity, the primary focus was on
+            functionality. The website serves as a restaurant inventory
+            management simulation. It enables users to track inventory stock,
+            expenses, revenue, and profit as purchases are made. Upon visiting
+            the homepage, you will find limited content until you register and
+            log in. Once authenticated, you gain access to the various models.
+            Each page allows you to add, update, or delete items as necessary.
+            The inventory page facilitates the addition of items, their unit
+            prices, and current stock levels. Similarly, the menu page allows
+            the addition of menu items along with their respective prices.
+            Furthermore, you can conveniently update the recipes for each menu
+            item. When a customer makes a purchase, the purchase page records
+            the transaction. In doing so, the inventory items used in the recipe
+            are automatically deducted from the stock on the inventory page. As
+            an overview, the report page tracks revenue from the purchases model
+            and expenses from the inventory model. By subtracting the two, it
+            presents the total profit generated.
+          </p>
+        </ul>
+      </div>
+      <div class="skills container">
+        <h2>Skills</h2>
+        <div class="flex-container">
+          <div class="icon-grid">
+            <div class="html">
+              <h3>HTML</h3>
+              <img src="icons/html.png" alt="html logo" />
             </div>
-        </div>
-        <div class="container projects-flex">
-            <h2>Projects</h2>
-            <ul class="projects">
-                <li id="project1">⯈ Website Design System</li>
-                <p id="project-description1"><a
-                        href="Projects/Website Design System/website-design-system-starting/starting/index.html"
-                        target="_blank">This</a> project showcases a fundamental implementation of HTML and CSS to
-                    create a visually appealing webpage. The webpage serves as a platform for displaying a range of
-                    colors along with their corresponding hex and RGB values. Additionally, it presents various fonts
-                    with their respective font styles, and provides text style examples for the p, h1, and h2 elements.
-                </p>
-                <li id="project2">⯈ Tea Cozy</li>
-                <p id="project-description2"><a href="Projects/Tea Cozy - Flexbot/index.html" target="_blank">This</a>
-                    project showcases the utilization of HTML and CSS, incorporating the
-                    design specification below as the foundation and employing flexbox as a key element in its
-                    layout.<br><br><img src="Projects/Tea Cozy - Flexbot/img-tea-cozy-redline.webp"
-                        alt="Tea Cozy design spec" width="100%"></p>
-                <li id="project3">⯈ Credit Card Checker</li>
-                <p id="project-description3"><a href="https://github.com/AkomaMathaino/credit_card_checker"
-                        target="_blank">This</a> project demonstrates my proficiency in JavaScript programming.
-                    The main focus of the project revolves around the
-                    <span class="code">validateCred()</span> function, which takes an input array containing credit card
-                    numbers and applies the criteria for credit card validation. It accurately determines whether a
-                    credit card number is valid or not, and returns a boolean value as output. Additionally, the <span
-                        class="code">findInvalidCards()</span> function plays a crucial role by iterating through a
-                    nested array of credit card numbers. It utilizes the <span class="code">validateCred()</span>
-                    function to identify and extract the invalid credit card numbers, storing them in a new nested array
-                    that is subsequently returned.<br><br><img
-                        src="Projects/Credit Card Checker/credit card checker.png" alt="Credit Card Checker Code"
-                        width="100%">
-                </p>
-                <li id="project4">⯈ Card Game</li>
-                <p id="project-description4"><a href="https://github.com/AkomaMathaino/card_game"
-                        target="_blank">This</a> is a simple card game implemented in Python. Each card in the
-                    game has three attributes: type, number, and color.<br><br>
-                    Types: Fire, Ice, Water<br>
-                    Numbers: 5-12<br>
-                    Colors: Red, Green, Yellow, Blue<br><br>
-                    At the beginning of the game, the deck is shuffled and divided equally between the player and the
-                    computer. In each round, the player is presented with a selection of three cards to choose from,
-                    while the computer also plays a card.<br><br>
-                    <img src="Projects/Card Game/1.png" alt="Card Game Image" width="100%PP"><br><br>
-                    The comparison process starts by comparing the types of the cards. Fire beats Ice, Ice beats Water,
-                    and Water beats Fire. If the types are the same, the numbers on the cards are compared, with the
-                    higher number winning. In the case of a tie in both type and number, the round ends without a
-                    winner. Each round, the winning card is saved for the winner.<br><br>
-                    <img src="Projects/Card Game/2.png" alt="Card Game Image" width="100%PP"><br><br>
-                    To win the game, a player must collect a specific set of three cards. The winning set is determined
-                    by both the type and color. The player must have either three cards of the same type or one card of
-                    each type, with distinct colors.<br><br>
-                    <img src="Projects/Card Game/3.png" alt="Card Game Image" width="100%PP">
-                </p>
-                <li id="project5">⯈ Django Delights</li>
-                <p id="project-description5"><a href="https://django-delights.herokuapp.com/" target="_blank">This</a>
-                    project is an app built using Django, a Python framework. While the
-                    design maintains simplicity, the primary focus was on functionality. The website serves as an
-                    inventory management system specifically designed for restaurant owners. It enables users to track
-                    inventory stock, expenses, revenue, and profit as purchases are made. Upon visiting the homepage,
-                    you
-                    will find limited content until you register and log in. Once
-                    authenticated, you gain access to the various models. Each page allows you to add, update, or delete
-                    items as necessary. The inventory page facilitates the addition of items, their unit prices, and
-                    current stock levels. Similarly, the menu page allows the addition of menu items along with their
-                    respective prices. Furthermore, you can conveniently update the recipes for each menu item. When a
-                    customer makes a
-                    purchase, the purchase page records the transaction. In doing
-                    so, the inventory items used in the recipe are automatically deducted from the stock on the
-                    inventory page. As an overview, the report page tracks revenue from the purchases model and
-                    expenses from the inventory model. By subtracting the two, it presents the total profit generated.
-                </p>
-            </ul>
-        </div>
-        <div class=" skills container">
-            <h2>Skills</h2>
-            <div class="flex-container">
-                <div class="icon-grid">
-                    <div class="html">
-                        <h3>HTML</h3>
-                        <img src="icons/html.png" alt="html logo">
-                    </div>
-                    <div class="css">
-                        <h3>CSS</h3>
-                        <img src="icons/css.png" alt="css logo">
-                    </div>
-                    <div class="javascript">
-                        <h3>Javascript</h3>
-                        <img src="icons/javascript.png" alt="javascript logo">
-                    </div>
-                    <div class="python">
-                        <h3>Python</h3>
-                        <img src="icons/python.png" alt="python logo">
-                        <p>(Django, Flask)</p>
-                    </div>
-                    <div class="postgresql">
-                        <h3>PostgreSQL</h3>
-                        <img src="icons/postgresql.png" alt="postgresql logo">
-                    </div>
-                    <div class="github-skill">
-                        <h3>Git/GitHub</h3>
-                        <img src="icons/github-skill.png" alt="github logo">
-                    </div>
-                    <div class="docker">
-                        <h3>Docker</h3>
-                        <img src="icons/docker.png" alt="docker logo">
-                    </div>
-                    <div class="devops">
-                        <h3>DevOps</h3>
-                        <img src="icons/devops.png" alt="devops logo">
-                    </div>
-                </div>
+            <div class="css">
+              <h3>CSS</h3>
+              <img src="icons/css.png" alt="css logo" />
             </div>
-        </div>
-        <div class="container flex-container">
-            <div class="contact-grid">
-                <h2>Contact</h2>
-                <div class="contact-form">
-                    <form method="POST" action="index.php">
-                        <input type="text" id="name" placeholder="Name" name="name" required>
-                        <input type="text" id="email" placeholder="Email" name="email" required>
-                        <textarea id="message" name="message" placeholder="Message" name="message" required></textarea>
-                        <input type="submit" value="Send" class="submit" name="submit">
-                    </form>
-                </div>
+            <div class="javascript">
+              <h3>Javascript</h3>
+              <img src="icons/javascript.png" alt="javascript logo" />
+              <p>(React, Node.js)</p>
             </div>
+            <div class="python">
+              <h3>Python</h3>
+              <img src="icons/python.png" alt="python logo" />
+              <p>(Django)</p>
+            </div>
+            <div class="postgresql">
+              <h3>PostgreSQL</h3>
+              <img src="icons/postgresql.png" alt="postgresql logo" />
+            </div>
+            <div class="github-skill">
+              <h3>Git/GitHub</h3>
+              <img src="icons/github-skill.png" alt="github logo" />
+            </div>
+            <div class="docker">
+              <h3>Docker</h3>
+              <img src="icons/docker.png" alt="docker logo" />
+            </div>
+            <div class="devops">
+              <h3>DevOps</h3>
+              <img src="icons/devops.png" alt="devops logo" />
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container flex-container">
+        <div class="contact-grid">
+          <h2>Contact</h2>
+          <div class="contact-form">
+            <form method="POST" action="index.php">
+              <input
+                type="text"
+                id="name"
+                placeholder="Name"
+                name="name"
+                required
+              />
+              <input
+                type="text"
+                id="email"
+                placeholder="Email"
+                name="email"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+                name="message"
+                required
+              ></textarea>
+              <input type="submit" value="Send" class="submit" name="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,347 +1,347 @@
 html,
 body {
-    max-width: 100vw;
-    margin: 0;
-    font-family: 'Merriweather', serif;
-    background-color: #171a22;
-    color: #C5C6C7;
+  max-width: 100vw;
+  margin: 0;
+  font-family: "Merriweather", serif;
+  background-color: #171a22;
+  color: #c5c6c7;
 }
 
 main {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    z-index: 10;
-    background-color: #0B0c10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  background-color: #0b0c10;
 }
 
 .bio-container {
-    width: 100%;
-    height: 100%;
-    color: black;
+  width: 100%;
+  height: 100%;
+  color: black;
 }
 
 .bio-fixed {
-    width: 100%;
-    height: 4rem;
+  width: 100%;
+  height: 4rem;
 }
 
 .logo {
-    width: 100%;
-    text-align: left;
-    display: block;
+  width: 100%;
+  text-align: left;
+  display: block;
 }
 
 .name {
-    position: fixed;
-    left: 5rem;
-    display: inline-block;
-    margin: 0;
-    font-size: 20px;
+  position: fixed;
+  left: 5rem;
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
 }
 
 .github {
-    position: relative;
-    height: 100%;
-    width: 4rem;
-    right: .5rem;
+  position: relative;
+  height: 100%;
+  width: 4rem;
+  right: 0.5rem;
 }
 
 .github a {
-    display: flex;
-    width: 4rem;
-    height: 4rem;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
 }
 
 .github img {
-    display: block;
-    margin: auto;
-    align-items: center;
+  display: block;
+  margin: auto;
+  align-items: center;
 }
 
 #github-img {
-    width: 75%;
-    height: 75%;
+  width: 75%;
+  height: 75%;
 }
 
 .linkedin {
-    position: relative;
-    height: 100%;
-    width: 4rem;
-    right: .5rem;
+  position: relative;
+  height: 100%;
+  width: 4rem;
+  right: 0.5rem;
 }
 
 .linkedin a {
-    display: flex;
-    width: 4rem;
-    height: 4rem;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
 }
 
 .linkedin img {
-    display: block;
-    margin: auto;
-    align-items: center;
+  display: block;
+  margin: auto;
+  align-items: center;
 }
 
 .bio-section {
-    background-image: url("shell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: calc(100vh - 4rem);
+  background-image: url("shell.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100vh - 4rem);
 }
 
 .quote-banner p {
-    margin: 0;
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 100%;
-    font-family: 'Pushster', cursive;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  font-family: "Pushster", cursive;
 }
 
 .galileo {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 3.2vmin;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 3.2vmin;
 }
 
 .quote-banner {
-    display: inline-block;
-    line-height: 1.5;
-    position: relative;
-    top: 20%;
-    font-size: 4vmin;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 1rem 0;
-    width: 100vw;
-    max-width: 100%;
+  display: inline-block;
+  line-height: 1.5;
+  position: relative;
+  top: 20%;
+  font-size: 4vmin;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem 0;
+  width: 100vw;
+  max-width: 100%;
 }
 
 .bio {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    font-size: 2.5vmin;
-    line-height: 1.5;
-    background: rgba(255, 255, 255, 0.6);
-    margin: 0;
-    width: 50rem;
-    padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 2.5vmin;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  width: 50rem;
+  padding: 1rem;
 }
 
 .bio-name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-@media screen and (max-height: 800px),
-(max-width: 800px) {
-    .bio {
-        font-size: 20px;
-    }
+@media screen and (max-height: 800px), (max-width: 800px) {
+  .bio {
+    font-size: 20px;
+  }
 
-    .galileo {
-        font-size: 26px;
-    }
+  .galileo {
+    font-size: 26px;
+  }
 
-    .quote-banner {
-        font-size: 32px;
-    }
+  .quote-banner {
+    font-size: 32px;
+  }
 }
 
 @media screen and (max-height: 532px) {
-    .bio {
-        position: relative;
-        top: 20%;
-        margin-top: 1rem;
-        font-size: 3.7vmin;
-    }
+  .bio {
+    position: relative;
+    top: 20%;
+    margin-top: 1rem;
+    font-size: 3.7vmin;
+  }
 
-    .galileo {
-        font-size: 4.9vmin;
-    }
+  .galileo {
+    font-size: 4.9vmin;
+  }
 
-    .quote-banner {
-        font-size: 6vmin;
-    }
+  .quote-banner {
+    font-size: 6vmin;
+  }
 }
 
 @media screen and (max-width: 720px) {
-    .bio {
-        width: calc(100vw - 5rem);
-        height: auto;
-    }
+  .bio {
+    width: calc(100vw - 5rem);
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 460px) {
-    .bio {
-        font-size: 4.3vmin;
-    }
+  .bio {
+    font-size: 4.3vmin;
+  }
 
-    .galileo {
-        font-size: 5.7vmin;
-    }
+  .galileo {
+    font-size: 5.7vmin;
+  }
 
-    .quote-banner {
-        font-size: 6.5vmin;
-    }
+  .quote-banner {
+    font-size: 6.5vmin;
+  }
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .projects {
-    list-style-type: none;
-    width: 50%;
-    margin: auto;
-    padding: 2rem 0;
+  list-style-type: none;
+  width: 50%;
+  margin: auto;
+  padding: 2rem 0;
 }
 
 .projects li {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 20px;
 }
 
 .projects p {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .projects a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .projects li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #project-description1,
 #project-description2,
 #project-description3,
 #project-description4,
-#project-description5 {
-    visibility: hidden;
-    height: 0;
-    margin: .4rem 0;
-    padding-left: 1rem;
+#project-description5,
+#project-description6 {
+  visibility: hidden;
+  height: 0;
+  margin: 0.4rem 0;
+  padding-left: 1rem;
 }
 
 .projects a,
 .projects a:visited {
-    color: #45a29e;
+  color: #45a29e;
 }
 
 .projects a:hover {
-    font-weight: 700;
-    color: #66fcf1;
+  font-weight: 700;
+  color: #66fcf1;
 }
 
 .code {
-    padding: 0 0.25rem;
-    margin: 0 0.0625rem;
-    border-radius: 0.125rem;
-    background-color: #2a2a36;
-    font-family: Monaco, Menlo, Ubuntu Mono, Droid Sans Mono, Consolas, monospace;
-    font-size: .8em;
+  padding: 0 0.25rem;
+  margin: 0 0.0625rem;
+  border-radius: 0.125rem;
+  background-color: #2a2a36;
+  font-family: Monaco, Menlo, Ubuntu Mono, Droid Sans Mono, Consolas, monospace;
+  font-size: 0.8em;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .skills {
-    background-color: #0B0c10;
+  background-color: #0b0c10;
 }
 
 .icon-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    width: 50%;
-    gap: 2rem;
-    justify-items: center;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 900;
-    padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  width: 50%;
+  gap: 2rem;
+  justify-items: center;
+  font-family: "Heebo", sans-serif;
+  font-weight: 900;
+  padding: 2rem 0;
 }
 
 .icon-grid h3,
 .icon-grid p {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 .icon-grid img {
-    display: block;
-    margin: auto;
-    width: 4.5rem;
+  display: block;
+  margin: auto;
+  width: 4.5rem;
 }
 
 .container {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto;
-    width: 50%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+  width: 50%;
 }
 
 .contact-section h2 {
-    grid-area: 1;
+  grid-area: 1;
 }
 
 .contact-form {
-    grid-area: 1 / 2;
+  grid-area: 1 / 2;
 }
 
 input,
 textarea {
-    display: block;
-    width: 32rem;
-    max-width: 100%;
-    height: 2rem;
-    margin: .5rem 1rem;
-    padding: .375rem .75rem;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border: 1px solid rgb(179, 179, 179);
-    font-family: 'Roboto', sans-serif;
+  display: block;
+  width: 32rem;
+  max-width: 100%;
+  height: 2rem;
+  margin: 0.5rem 1rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid rgb(179, 179, 179);
+  font-family: "Roboto", sans-serif;
 }
 
 input:focus,
 textarea:focus {
-    outline: none;
-    border: 1px solid #00445a;
+  outline: none;
+  border: 1px solid #00445a;
 }
 
 textarea {
-    height: 10rem;
-    padding-top: .775rem;
+  height: 10rem;
+  padding-top: 0.775rem;
 }
 
 .submit {
-    width: 6rem;
+  width: 6rem;
 }
 
 .submit:hover {
-    opacity: .8;
+  opacity: 0.8;
 }
